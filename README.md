@@ -1,1 +1,13 @@
-# sydneys-space-racer
+# Sydney's Space Racer
+
+One day my daughter told me she had an idea for a game and drew a simple picture. That was the inspiration behind this game. You can see the drawing by clicking the About Game button on the game's home screen.
+
+## Running the game on MacOS
+
+1. In terminal, navigate to the sydneys-space-racer folder and run a webserver:
+
+        python -m SimpleHTTPServer
+
+2. Open your browser at localhost:8000/main.html
+
+This game was build using PhaserJS. See more at https://phaser.io/
