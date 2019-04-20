@@ -43,15 +43,12 @@ var myShip;
 var sydney;
 var circleTip;
 var readyText;
-var myRank;
-var player2rank;
-var player3rank;
+var myRank, player2rank, player3rank;
 var playerScores = [];
 var player1finished = false;
 var player2finished = false;
 var player3finished = false;
-var ship2Text;
-var ship3Text;
+var ship2Text, ship3Text;
 var overlay;
 var startBg;
 var startButton;
@@ -62,12 +59,9 @@ var resultsOverlay;
 var myPosition = 0;
 var racer2Position;
 var racer3Position;
-var firstPlace;
-var secondPlace;
-var thirdPlace;
+var firstPlace, secondPlace, thirdPlace;
 var player1Ship, player2Ship, player3Ship;
-var shipGrow;
-var shipShrink;
+var shipGrow, shipShrink;
 var timer;
 var timerText;
 var countdownText;
@@ -115,6 +109,7 @@ function create() {
     circleTip.alpha = 0;
     game.add.tween(circleTip).to( { alpha: 0.4 }, 500, Phaser.Easing.Linear.In, true, 0, -1, true);
 
+    // Sydney's ship
     myShip = game.add.sprite(80, 280, 'my-ship-animate');
     myShip.width = 117;
     myShip.height = 74;
@@ -164,8 +159,6 @@ function create() {
     // Animate AI flames
     var ship2flames = ship2.animations.add('ship2flames', [1,2,3], 8, true);
     var ship3flames = ship3.animations.add('ship3flames', [1,2,3], 8, true);
-
-    
 }
 
 function removePointer() {
@@ -313,7 +306,7 @@ function listener () {
 }
 
 function startGame() {    
-    // need to group these!
+    // TODO: group these
     startBg.kill();
     startButton.kill();
     aboutButton.kill();
@@ -365,7 +358,7 @@ function goBack() {
 }
 
 function aboutClick() {    
-    // need to group these!
+    // TODO: group these
     startButton.kill();
     aboutButton.kill();
     aboutScreen = game.add.sprite(0, 0, 'about');
