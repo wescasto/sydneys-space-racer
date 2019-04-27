@@ -10,4 +10,4 @@ One day my daughter told me she had an idea for a game and drew a simple picture
 
 2. Open your browser at http://localhost:8000
 
-This game was build using PhaserJS. See more at https://phaser.io/
+This game was built using PhaserJS (v2.5.0). See more at https://phaser.io/
