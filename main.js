@@ -13,7 +13,15 @@ var config = {
 
 var game = new Phaser.Game(config);
 
+WebFontConfig = {
+    //  The Google Fonts we want to load (specify as many as you like in the array)
+    google: {
+      families: ['Bungee']
+    }
+};
+
 function preload() {
+    game.load.script('webfont', '//ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js');
     game.load.spritesheet('my-ship-animate', 'images/ship-pink-flames.png', 234, 148, 4);
     game.load.spritesheet('ship2-animate', 'images/ship-blue-flames.png', 234, 148, 4);
     game.load.spritesheet('ship3-animate', 'images/ship-green-flames.png', 234, 148, 4);
