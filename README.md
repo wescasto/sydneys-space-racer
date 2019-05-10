@@ -1,6 +1,8 @@
 # Sydney's Space Racer
 
-One day my daughter told me she had an idea for a game and drew a simple picture. That was the inspiration behind this game. You can see the drawing by clicking the About Game button on the game's home screen.
+A simple game I made for my 5-year-old based on one of her drawings. You can see the drawing by clicking the About Game button on the home screen. I created the music, artwork, and coded the game in Javascript.
+
+![screenshot](https://user-images.githubusercontent.com/9968431/57495998-be066480-729e-11e9-8481-425df325fba3.png)
 
 ## Running the game on MacOS
 
