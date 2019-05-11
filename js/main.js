@@ -59,20 +59,15 @@ var player3finished = false;
 var ship2Text, ship3Text;
 var overlay;
 var startBg;
-var startButton;
-var aboutButton;
-var homeButton;
-var replayButton;
+var startButton, aboutButton, homeButton, replayButton;
 var resultsOverlay;
 var myPosition = 0;
-var racer2Position;
-var racer3Position;
+var racer2Position = 0;
+var racer3Position = 0;
 var firstPlace, secondPlace, thirdPlace;
 var player1Ship, player2Ship, player3Ship;
 var shipGrow, shipShrink;
-var timer;
-var timerText;
-var countdownText;
+var timer, timerText, countdownText;
 var finishLine;
 var finalShipGrow, finalShipShrink;
 var showPointer = true;
@@ -123,9 +118,8 @@ function create() {
     myShip.height = 74;
     myShip.anchor.setTo(0.5, 0.5);
     game.physics.enable(myShip, Phaser.Physics.ARCADE);
-    //game.input.onDown.addOnce(start, this);
 
-
+    // curosr hint if you wait too long
     pointer = game.add.sprite(110, 320, 'pointer');
     pointer.inputEnabled = true;
     pointer.width = 37;
@@ -325,7 +319,7 @@ function startGame() {
 
     overlay.reset(0, 0);
 
-    readyText = game.add.text(480, game.world.centerY, '3', { font:'250px Bungee', fill:'#fff', align: 'center' });
+    readyText = game.add.text(480, game.world.centerY, '3', { font:'250px Bungee, Arial Bold, sans-serif', fill:'#fff', align: 'center' });
     readyText.anchor.set(0.5);
     readyText.fixedToCamera = true;
 
@@ -494,6 +488,7 @@ function update() {
     } // if not gameOver
 
     if (gameOver === true) {
+        // spin swirl
         swirl.angle += 1;
     }
 }
