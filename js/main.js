@@ -334,8 +334,7 @@ function startGame() {
     if (timer.paused === true) {
         timer.resume();
         countdown = 3;
-        // 3 because this is getting set to 0 for some reason and catching 'Go' text
-        readyText.setText('3');
+        readyText.setText(countdown);
     } else {
         timer.start();
     }
