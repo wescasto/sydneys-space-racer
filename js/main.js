@@ -1,7 +1,7 @@
 var config = {
     'width': 950,
     'height': 500,
-    'renderer': Phaser.CANVAS,
+    'renderer': Phaser.AUTO,
     'parent': 'space-game',
     'resolution': window.devicePixelRatio,
     'state': {
